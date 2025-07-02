@@ -11,10 +11,12 @@
     --color-slate-100: oklch(96.8% 0.007 247.896);
     --color-slate-200: oklch(92.9% 0.013 255.508);
     --color-slate-300: oklch(86.9% 0.022 252.894);
+    --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-white: #fff;
     --spacing: 0.25rem;
+    --radius-2xl: 1rem;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
@@ -197,6 +199,9 @@
   .border-collapse {
     border-collapse: collapse;
   }
+  .origin-top-left {
+    transform-origin: top left;
+  }
   .rotate-3 {
     rotate: 3deg;
   }
@@ -206,12 +211,18 @@
   .flex-col {
     flex-direction: column;
   }
+  .rounded-2xl {
+    border-radius: var(--radius-2xl);
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
   .bg-amber-500 {
     background-color: var(--color-amber-500);
+  }
+  .bg-gray-100 {
+    background-color: var(--color-gray-100);
   }
   .bg-gray-200 {
     background-color: var(--color-gray-200);
@@ -230,6 +241,9 @@
   }
   .bg-white {
     background-color: var(--color-white);
+  }
+  .bg-\[url\(\.\/assets\/img\/padrao\.svg\)\] {
+    background-image: url(./assets/img/padrao.svg);
   }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
